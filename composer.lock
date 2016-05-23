@@ -1,0 +1,209 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "728f1d9491daff5a7fbea2e6db6dc8c0",
+    "content-hash": "aa6815bf134ed20d0ea4d80e7845ec03",
+    "packages": [
+        {
+            "name": "icicleio/icicle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icicleio/icicle.git",
+                "reference": "a534c106b755aed23dd83ff0e74ae67f20863ff7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icicleio/icicle/zipball/a534c106b755aed23dd83ff0e74ae67f20863ff7",
+                "reference": "a534c106b755aed23dd83ff0e74ae67f20863ff7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0"
+            },
+            "suggest": {
+                "ext-ev": "Provides an event loop with better performance.",
+                "ext-event": "Another extension providing an event loop with better performance (ext-ev preferred).",
+                "ext-libevent": "Another extension providing an event loop with better performance (ext-ev or ext-event preferred).",
+                "ext-pcntl": "Enables custom signal handling."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Icicle\\": "src"
+                },
+                "files": [
+                    "src/Awaitable/functions.php",
+                    "src/Coroutine/functions.php",
+                    "src/Loop/functions.php",
+                    "src/Observable/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Piotrowski",
+                    "email": "aaron@icicle.io"
+                }
+            ],
+            "description": "Icicle is a PHP library for writing asynchronous code using synchronous coding techniques.",
+            "homepage": "http://icicle.io",
+            "keywords": [
+                "Socket",
+                "async",
+                "asynchronous",
+                "awaitable",
+                "coroutine",
+                "event",
+                "generator",
+                "interruptible",
+                "multitasking",
+                "network",
+                "promise",
+                "server",
+                "stream"
+            ],
+            "time": "2016-01-05 05:30:25"
+        },
+        {
+            "name": "icicleio/socket",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icicleio/socket.git",
+                "reference": "d863bbd232bb8b049199462acb5091794095344a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icicleio/socket/zipball/d863bbd232bb8b049199462acb5091794095344a",
+                "reference": "d863bbd232bb8b049199462acb5091794095344a",
+                "shasum": ""
+            },
+            "require": {
+                "icicleio/icicle": "~2.0",
+                "icicleio/stream": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0"
+            },
+            "suggest": {
+                "ext-openssl": "Enables using SSL/TLS on stream sockets."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Icicle\\Socket\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Piotrowski",
+                    "email": "aaron@icicle.io"
+                }
+            ],
+            "description": "Asynchronous stream socket server and client for Icicle.",
+            "homepage": "http://icicle.io",
+            "keywords": [
+                "Socket",
+                "async",
+                "asynchronous",
+                "client",
+                "server",
+                "stream"
+            ],
+            "time": "2015-12-31 05:59:40"
+        },
+        {
+            "name": "icicleio/stream",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icicleio/stream.git",
+                "reference": "f2f1800d1c4e6811acca3d6c1fb7f31ca04c8af4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icicleio/stream/zipball/f2f1800d1c4e6811acca3d6c1fb7f31ca04c8af4",
+                "reference": "f2f1800d1c4e6811acca3d6c1fb7f31ca04c8af4",
+                "shasum": ""
+            },
+            "require": {
+                "icicleio/icicle": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0"
+            },
+            "suggest": {
+                "ext-mbstring": "Enables encoding-aware text stream reading."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Icicle\\Stream\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Piotrowski",
+                    "email": "aaron@icicle.io"
+                }
+            ],
+            "description": "Asynchronous streams for Icicle.",
+            "homepage": "http://icicle.io",
+            "keywords": [
+                "async",
+                "asynchronous",
+                "stream"
+            ],
+            "time": "2015-12-31 05:49:44"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "icicleio/socket": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

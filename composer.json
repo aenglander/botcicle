@@ -1,0 +1,15 @@
+{
+    "name": "adame/botcicle",
+    "description": "Robot with icicle.io",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Adam Englander",
+            "email": "adamenglander@yahoo.com"
+        }
+    ],
+    "require": {
+        "icicleio/socket": "~2.0@dev"
+    },
+    "minimum-stability": "dev"
+}
